@@ -1,5 +1,10 @@
-on: [push, pull_request]
-
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ${{ matrix.os }}
